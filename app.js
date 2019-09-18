@@ -35,7 +35,7 @@ App({
   },
  globalData: {
     userInfo: null,
-    baseUrl: "http://orange.nat100.top/orange",
+    baseUrl: "http://orange.natappvip.cc/orange",
     appName: "橘子树英语"
   }, alert: function (e) {
     var toast = {
