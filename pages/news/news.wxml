@@ -1,0 +1,27 @@
+<view class='container'>
+<view class="ctitle">
+ <text class='title'>{{title}}</text>
+ <text class='line'></text>
+</view>
+ <view class='t-title'>
+   <text></text>
+ </view>
+ <view style='flex:1;' class='ccontent'>
+   <scroll-view
+    scroll-y
+    style='height:100%;' bindscrolltolower="getNewData"
+  >
+  <block wx:for="{{news}}" wx:key="item">
+  <view class="title-card" hover-class='active-bg' bindtap='navurl' data-url='{{item.url}}'>
+    <view class='c-head c-head1'>
+    <view class='c-h-left'><image style='width:20px;height:20px;' src='{{baseUrl}}/images/env/logo.png'></image>  橘子树英语</view><view class='time'><text >{{item.time}}</text></view></view>
+    <view class='c-img' style='background-color:green;'><image src='{{baseUrl}}{{item.img}}' mode='center'></image></view>
+     <view class='c-head c-bottom'>
+     <view class='c-title c-h-left'><text class=''>{{item.des}}</text></view>
+     <view><image style='width:60px;height:100%;' src='{{baseUrl}}/images/env/logo.png'></image></view></view>
+  </view>
+  
+   </block>
+  </scroll-view>
+  </view>
+</view>

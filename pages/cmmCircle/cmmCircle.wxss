@@ -1,0 +1,35 @@
+.page{  padding: 20px } 
+.text{ 
+   width: 100%;  
+margin-bottom: 40px;
+  font-size: 15px;
+    padding: 5px } 
+.image{  
+  width:31%;  
+  height: 60px;  
+  padding: 2px ;
+ 
+  }
+  .leftrow{
+    width: 31%;
+  }
+  .choimg{
+    width: 80px;
+ background-color: #f4f4f4;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  }
+   .moment_img{  
+     align-items: center;
+     width: 60px;  
+     height: 60px;
+      }
+.image_content{  
+  width: 100%;  
+  display: flex;  
+  flex-wrap: wrap;  
+  margin-bottom: 20px }

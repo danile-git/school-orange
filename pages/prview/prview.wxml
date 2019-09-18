@@ -1,0 +1,27 @@
+<view class='container'>
+<view class="ctitle">
+ <text class='title'>{{title}}</text>
+ <text class='line'></text>
+</view>
+ <view class='t-title'>
+   <text>全部(20)</text>
+ </view>
+ <view style='flex:1;'>
+   <scroll-view
+    scroll-y
+    style='height:100%;'
+  >
+  <block wx:for="{{order}}" wx:key="*this">
+  <view class="title-card">
+    <view class='card-left'>
+    <image src="{{item.img}}"></image></view>
+    <view class='card-right'>
+    <text class='title'>{{item.title}}</text>
+    <scroll-view scroll-y class='desc'>{{item.desc}}</scroll-view>
+    <text class='time'>{{item.time}}</text>
+    </view>
+  </view>
+   </block>
+  </scroll-view>
+  </view>
+</view>

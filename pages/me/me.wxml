@@ -1,0 +1,22 @@
+<view class='container'>
+   <view>
+     <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <block wx:for="{{menu}}" wx:key="*this">
+   <view class='m-items' bindtap='mitemClick' hover-class='m-items-bg' data-url="{{item.url}}">
+    <view class='m-left'>
+      <image src='{{item.img}}' ></image>
+      <text class='m-text'>{{item.text}}</text>
+    </view>
+   <view>
+      <image src='/images/right.png'></image>
+   </view>
+   </view> 
+  </block>
+   </view>
+</view>

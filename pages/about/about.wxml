@@ -1,0 +1,22 @@
+<view class="container">
+  <image src="/images/logo.png" class="logo" mode='aspectFit' animation='{{imgAnim}}'>
+ </image>
+ <view class="card">
+  <rich-text class="card-content">
+  <p class="card-text" style="text-indent:2em;"><span class="org-title">橘子树</span>CC英语，从1995创办开始，24年来，始终专注于英语教学与研究，一直以来倍受家长和学生的信赖。时至今日，橘子树CC英语已经发展到拥有40多所直营校区，<span class="bas-title">30000</span>余名在校学生，<span class="bas-title">1200</span>余名教职员工，成为单科英语培训机构的佼佼者。24年来已帮助<span class="bas-title">三十万</span>名学生提高英语能力，让他们的未来因为英语而走得更高、更远。</p>
+  </rich-text>
+  <swiper autoplay='true' class='env-swiper'>
+   <block wx:for="{{photos}}">
+    <swiper-item class="sw-item">
+      <view class="phs-items">
+        <text class='subtitle'>{{item.subtitle}}</text>
+        <text class="post-title">{{item.title}}</text>
+        <image src="{{baseUrl}}{{item.img}}" lazy-load='true' mode='aspectFit'></image>
+        <text class='post-bar'>{{item.user}} {{item.time}}</text>
+        <text class='read-more'>Read More</text>
+      </view>
+    </swiper-item>
+    </block>
+  </swiper>
+ </view>
+</view>

@@ -1,0 +1,45 @@
+<view class='container'>
+ <view>
+     <view class="userinfo">
+      <image bindtap="clickImage" class="userinfo-avatar" src="{{userImg}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <form bindsubmit="settingUpdate">
+   <text class="line"></text>
+  
+   <view class="row">
+        <text>姓名</text><input type="text" name="name" value='{{userInfo.nickName}}' placeholder=' 昵称' maxlength='20'/> 
+        <text>年龄</text><input type="number" name="age" placeholder=' 年龄' maxlength='2'/>
+   </view>
+      <view class="row">
+      <text>性别</text>
+       <radio-group class="radio-group" name="sex">
+              <block wx:for="{{gender}}" wx:key="*this">
+        <radio value="{{item.value}}" checked="{{item.checked}}"/><text>{{item.name}}</text>
+        </block>
+       </radio-group>
+   </view>
+   <view class="row">
+
+        <text>手机</text><input type="number" name="phone" placeholder=' 手机号码' maxlength='11' />
+        </view>
+          <view class="row">
+
+        <text>地址</text><input name="address" placeholder=' 地址' maxlength='50' value='{{userInfo.province}} {{userInfo.city}}' />
+        
+   </view>
+  
+   <text class="line"></text>
+   <view class='btn'>
+    <!-- <button class="button-add" bindtap="addCart">取消</button> -->
+    <button class="button-buy" form-type='submit'>修改</button>
+   </view>
+   <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+        <block wx:for="{{actionSheetItems}}" wx:key="unique">
+            <action-sheet-item bindtap="{{item.bindtap}}">{{item.txt}}</action-sheet-item>
+        </block>
+        <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+    </action-sheet>
+ </form>
+ </view>
+</view>

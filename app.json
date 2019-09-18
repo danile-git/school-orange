@@ -1,0 +1,42 @@
+{
+  "pages": [
+   
+    "pages/me/me",
+          "pages/index/index",
+  
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "橘子树英语",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#ff7501",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/idx-dis.png",
+        "selectedIconPath": "images/idx-act.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/about-dis.png",
+        "selectedIconPath": "images/about-act.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me-dis.png",
+        "selectedIconPath": "images/me-act.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

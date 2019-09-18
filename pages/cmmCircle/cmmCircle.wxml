@@ -1,0 +1,15 @@
+<view class='page'> 
+ <textarea class='text' bindinput="input" placeholder="这一刻的想法" auto-height/> 
+  <view class="image_content">
+    <view class='image' wx:for="{{img_url}}">
+       <image class="moment_img" src="{{item}}" mode='aspectFill'></image>  
+   </view>
+      <view class='leftrow'>   
+   <view class='choimg' style='display:{{hideAdd?"none":"block"}}'> 
+     <image bindtap="chooseimage" class="moment_img" src='/images/add.png'>
+     </image> 
+    </view> 
+    </view>
+   </view>
+   <button bindtap="send" type='primary' >发布</button> 
+  </view>
