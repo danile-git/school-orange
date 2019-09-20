@@ -1,0 +1,127 @@
+<view class='container'>
+<view  class="commodity_attr_box" >
+ <view class="section title-card">
+  <view class="flex-wrp" style="flex-direction:column;">
+    <view class="flex-item title1">零基础直通雅思托福10年课程规划体系 </view>
+    <view class="flex-item title-line"></view>
+    <view class="flex-item title3">{{book.title}}</view>
+  </view>
+</view>
+<view  style="text-align:center;">
+   <image src='{{baseUrl}}{{book.img}}' mode="widthFix" class="commImg"></image>
+</view>
+   <text class="line"></text>
+   <view class='guige'>
+      <text class="gg-title">课程描述:</text>
+      <view class='gg'>
+        <text>{{book.desc}}</text>
+      </view>
+   </view>
+   <text class="line"></text>
+   <view class="row" >
+    
+<view class='g_con'>
+
+  <!-- 物流时间轴 -->
+  <view class='expressRecord'>
+
+
+    <!-- 顶部收货地址 -->
+    <view class='expressRecord-getAddress'>
+      <view class='expressRecord-top'>
+        <view class='getAddress-icon'>
+        
+        </view>
+        <view class='getAddress-text'>目录</view>
+      </view>
+    </view>
+
+    <!-- 顶部收货地址半个时间轴线 -->
+    <view class='noReach-online-top-close'></view>
+
+
+    <!-- 单个物流记录点时间轴：当前正在进行的物流状态 -->
+    <view class='expressRecord-single-close'>
+
+      <!-- 左边子容器 -->
+      <view class='expressRecord-single-noReach-online-top-close'>
+        <!-- 正在进行的时间轴上半个时间线 -->
+        <view class='online-top-closing'></view>
+        <!-- 正在进行的时间轴点 -->
+        <view class='dot-closing'></view>
+        <!-- 正在进行的时间轴下半个时间线 -->
+        <view class='online-bottom'></view>
+      </view>
+
+      <!-- 右边子容器 -->
+      <view class='expressRecord-text'>
+        <view class='expressRecord-statusing'>Unit 1</view>
+        <view class='expressRecord-status-addressing'>字母、元音、辅音</view>
+      </view>
+    </view>
+
+
+    <!-- 单个物流记录点时间轴：当前正在进行的物流状态 -->
+    <view class='expressRecord-single-close'>
+
+      <!-- 左边子容器 -->
+      <view class='expressRecord-single-noReach-online-top-close'>
+        <!-- 正在进行的时间轴上半个时间线 -->
+        <view class='online-top-closing'></view>
+        <!-- 正在进行的时间轴点 -->
+        <view class='dot-closing'></view>
+        <!-- 正在进行的时间轴下半个时间线 -->
+        <view class='online-bottom'></view>
+      </view>
+
+      <!-- 右边子容器 -->
+      <view class='expressRecord-text'>
+        <view class='expressRecord-statusing'>Unit 2</view>
+        <view class='expressRecord-status-addressing'>指示代词、不定冠词、What问句、字母组合</view>
+      </view>
+    </view>
+
+    <!-- 单个物流记录点时间轴：当前正在进行的物流状态 -->
+    <view class='expressRecord-single-close'>
+
+      <!-- 左边子容器 -->
+      <view class='expressRecord-single-noReach-online-top-close'>
+        <!-- 正在进行的时间轴上半个时间线 -->
+        <view class='online-top-closing'></view>
+        <!-- 正在进行的时间轴点 -->
+        <view class='dot-closing'></view>
+        <!-- 正在进行的时间轴下半个时间线 -->
+        <view class='online-bottom'></view>
+      </view>
+
+      <!-- 右边子容器 -->
+      <view class='expressRecord-text'>
+        <view class='expressRecord-statusing'>Unit 3</view>
+        <view class='expressRecord-status-addressing'>字母、元音、辅音</view>
+      </view>
+    </view>
+    <!-- 单个物流记录点时间轴：当前正在进行的物流状态 -->
+    <view class='expressRecord-single-close'>
+
+      <!-- 左边子容器 -->
+      <view class='expressRecord-single-noReach-online-top-close'>
+        <!-- 正在进行的时间轴上半个时间线 -->
+        <view class='online-top-closing'></view>
+        <!-- 正在进行的时间轴点 -->
+        <view class='dot-closing'></view>
+        <!-- 正在进行的时间轴下半个时间线 -->
+        <view class='online-bottom'></view>
+      </view>
+
+      <!-- 右边子容器 -->
+      <view class='expressRecord-text'>
+        <view class='expressRecord-statusing'>Unit 4</view>
+        <view class='expressRecord-status-addressing'>词性区分、What问句、字母组合、音节划分</view>
+      </view>
+    </view>
+   
+   </view>
+</view>
+</view>
+</view>
+</view>

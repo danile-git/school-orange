@@ -31,6 +31,7 @@
             <view class="flex-item cton h4 card-title">{{item.title}} </view>
             <view class="flex-item cton title2">{{item.desc}}</view>
             <button class='btn-primary cton left' size='mini' bindtap='showModal' data-current='{{item}}'>预 约 报 名</button>
+             <button class='cton left' size='mini' bindtap='showModalDetail' data-current='{{index}}' data-index='{{currentTab}}'>查 看 详 情</button>
           </view>
         </block>
   </view>
@@ -83,5 +84,6 @@
     <button class="button-buy" form-type='submit'>立即预约</button>
    </view>
   
-</view> </form>
+</view> 
+</form>
 </view>
